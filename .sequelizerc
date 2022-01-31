@@ -1,0 +1,10 @@
+const path = require('path');
+const configBD = require("./src/config/configDatabase");
+
+configSequelize = {
+  config: path.resolve(__dirname, "src", "config", "configSequelize.js"), 
+  "migrations-path": path.resolve(__dirname, "src", "database", "migrations"),
+  "models-path": path.resolve(__dirname, "src", "models")
+};
+
+module.exports = configSequelize;
